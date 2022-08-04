@@ -1,0 +1,119 @@
+-- MySQL dump 10.13  Distrib 5.5.62, for Win64 (AMD64)
+--
+-- Host: localhost    Database: web_koordinat
+-- ------------------------------------------------------
+-- Server version	5.5.5-10.4.24-MariaDB
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `chairs`
+--
+
+DROP TABLE IF EXISTS `chairs`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `chairs` (
+  `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
+  `x` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '0',
+  `y` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '0',
+  `rssi_1` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '0',
+  `rssi_2` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '0',
+  `rssi_3` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '0',
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  `status` int(11) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=61 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `chairs`
+--
+
+LOCK TABLES `chairs` WRITE;
+/*!40000 ALTER TABLE `chairs` DISABLE KEYS */;
+INSERT INTO `chairs` VALUES (1,'1','1','-64','-81','-85',NULL,NULL,1),(2,'2','1','-56','-79','-81',NULL,NULL,0),(3,'3','1','-61','-75','-83',NULL,NULL,0),(4,'4','1','-60','-85','-82',NULL,NULL,0),(5,'5','1','-71','-82','-88',NULL,NULL,1),(6,'1','2','-69','-77','-85',NULL,NULL,1),(7,'2','2','-60','-79','-80',NULL,NULL,0),(8,'3','2','-54','-78','-82',NULL,NULL,1),(9,'4','2','-68','-79','-80',NULL,NULL,1),(10,'5','2','-78','-84','-88',NULL,NULL,1),(11,'1','3','-74','-80','-82',NULL,NULL,1),(12,'2','3','-62','-78','-77',NULL,NULL,1),(13,'3','3','-63','-79','-80',NULL,NULL,1),(14,'4','3','-61','-81','-82',NULL,NULL,1),(15,'5','3','-75','-82','-87',NULL,NULL,1),(16,'1','4','-73','-81','-82',NULL,NULL,0),(17,'2','4','-68','-75','-78',NULL,NULL,1),(18,'3','4','-66','-77','-79',NULL,NULL,0),(19,'4','4','-65','-79','-80',NULL,NULL,1),(20,'5','4','-76','-81','-86',NULL,NULL,1),(21,'1','5','-80','-76','-83',NULL,NULL,0),(22,'2','5','-68','-71','-80',NULL,NULL,1),(23,'3','5','-64','-72','-78',NULL,NULL,1),(24,'4','5','-62','-74','-80',NULL,NULL,0),(25,'5','5','-77','-76','-85',NULL,NULL,1),(26,'1','6','-73','-71','-85',NULL,NULL,1),(27,'2','6','-67','-70','-77',NULL,NULL,1),(28,'3','6','-68','-66','-78',NULL,NULL,1),(29,'4','6','-66','-74','-84',NULL,NULL,1),(30,'5','6','-78','-71','-85',NULL,NULL,1),(31,'1','7','-77','-63','-78',NULL,NULL,1),(32,'2','7','-66','-72','-85',NULL,NULL,0),(33,'3','7','-65','-73','-81',NULL,NULL,1),(34,'4','7','-71','-74','-82',NULL,NULL,1),(35,'5','7','-79','-73','-86',NULL,NULL,0),(36,'1','8','-81','-61','-80',NULL,NULL,0),(37,'2','8','-61','-74','-80',NULL,NULL,1),(38,'3','8','-70','-67','-82',NULL,NULL,0),(39,'4','8','-69','-70','-80',NULL,NULL,1),(40,'5','8','-81','-78','-81',NULL,NULL,1),(41,'1','9','-78','-71','-79',NULL,NULL,1),(42,'2','9','-70','-76','-80',NULL,NULL,1),(43,'3','9','-67','-74','-78',NULL,NULL,1),(44,'4','9','-72','-74','-83',NULL,NULL,0),(45,'5','9','-82','-80','-82',NULL,NULL,1),(46,'1','10','-77','-75','-76',NULL,NULL,0),(47,'2','10','-73','-80','-80',NULL,NULL,1),(48,'3','10','-71','-74','-85',NULL,NULL,0),(49,'4','10','-75','-76','-82',NULL,NULL,1),(50,'5','10','-82','-83','-78',NULL,NULL,1),(51,'1','11','-82','-72','-78',NULL,NULL,1),(52,'2','11','-72','-80','-78',NULL,NULL,1),(53,'3','11','-75','-77','-81',NULL,NULL,1),(54,'4','11','-77','-78','-79',NULL,NULL,1),(55,'5','11','-78','-80','-72',NULL,NULL,0),(56,'1','12','-82','-75','-73',NULL,NULL,1),(57,'2','12','-79','-80','-77',NULL,NULL,1),(58,'3','12','-79','-82','-84',NULL,NULL,1),(59,'4','12','-76','-78','-75',NULL,NULL,1),(60,'5','12','-77','-82','-82',NULL,NULL,1);
+/*!40000 ALTER TABLE `chairs` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `migrations`
+--
+
+DROP TABLE IF EXISTS `migrations`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `migrations` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `migration` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `batch` int(11) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `migrations`
+--
+
+LOCK TABLES `migrations` WRITE;
+/*!40000 ALTER TABLE `migrations` DISABLE KEYS */;
+INSERT INTO `migrations` VALUES (1,'2019_12_14_000001_create_personal_access_tokens_table',1),(2,'2022_07_17_164024_create_chairs_table',1);
+/*!40000 ALTER TABLE `migrations` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `personal_access_tokens`
+--
+
+DROP TABLE IF EXISTS `personal_access_tokens`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `personal_access_tokens` (
+  `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
+  `tokenable_type` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `tokenable_id` bigint(20) unsigned NOT NULL,
+  `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `token` varchar(64) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `abilities` text COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `last_used_at` timestamp NULL DEFAULT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `personal_access_tokens_token_unique` (`token`),
+  KEY `personal_access_tokens_tokenable_type_tokenable_id_index` (`tokenable_type`,`tokenable_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `personal_access_tokens`
+--
+
+LOCK TABLES `personal_access_tokens` WRITE;
+/*!40000 ALTER TABLE `personal_access_tokens` DISABLE KEYS */;
+/*!40000 ALTER TABLE `personal_access_tokens` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Dumping routines for database 'web_koordinat'
+--
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2022-08-04 14:43:21
